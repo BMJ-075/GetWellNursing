@@ -1,0 +1,62 @@
+<!-- This is a plain HTML basic example with formcarry -->
+
+<!-- Important things to get started: -->
+<!-- Your form element needs to include method="POST" attribute -->
+<!-- You can add input, textarea and other form elements, and they all need to have a name="<UNIQUE_NAME_YOU_PREFER>" attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>Formcarry Form Example</title>
+  </head>
+  <body>
+    <section class="formcarry-container">
+      <!-- The form below is valid, you can add or delete fields as you want -->
+      <!-- Please make sure that each form element has name="" attribute like the example below -->
+      <form
+        action="https://formcarry.com/s/lu_O-c_OyqF"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="formcarry-block">
+          <label for="fc-generated-1-name">Full Name</label>
+          <!-- You can change name="" attribute to anything you want, with those key you'll see formcarry -->
+          <input
+            type="text"
+            name="name"
+            id="fc-generated-1-name"
+            placeholder="Your first and last name"
+          />
+        </div>
+
+        <div class="formcarry-block">
+          <label for="fc-generated-1-email">Your Email Address</label>
+          <!-- It's always good to put email field in the form, it helps formcarrys spam detection algorithm -->
+          <input
+            type="email"
+            name="email"
+            id="fc-generated-1-email"
+            placeholder="john@doe.com"
+          />
+        </div>
+
+        <div class="formcarry-block">
+          <label for="fc-generated-1-message">Your message</label>
+          <textarea
+            name="message"
+            name="message"
+            id="fc-generated-1-message"
+            placeholder="Enter your message..."
+          ></textarea>
+        </div>
+
+        <div class="formcarry-block">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
